@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 class="text">Old text</h1>
+
+<script src="AnimatedText.js"></script>
+<script>
+    const el = document.querySelector('.text')
+
+    const animator = new TextAnimator(el)
+
+    // animator.setText("new phrase")
+
+    animator.setPhrases([
+        'first phrase',
+        'second phrase',
+        'last',
+    ])
+</script>
+</body>
+</html>
